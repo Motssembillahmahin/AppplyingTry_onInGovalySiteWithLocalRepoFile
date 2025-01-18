@@ -11,9 +11,9 @@ const upload = multer({ dest: 'uploads/' });
 
 // Configure Cloudinary
 cloudinary.config({
-    cloud_name: 'dylw3vjzs',
-    api_key: '738169351743313', 
-    api_secret: 'jKDfZ2E4FWZuv2t4vNJnD9XRwOU', // Replace with your API secret
+    cloud_name: '',
+    api_key: '', 
+    api_secret: '', // Replace with your API secret
 });
 
 // API Endpoint for Try-On
@@ -45,7 +45,7 @@ router.post('/try-on', upload.single('personImage'), async (req, res) => {
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
-                'X-API-KEY': 'sk_e8432c21c7d84fa28605e5be9505d547', // Replace with your external API key
+                'X-API-KEY': '', // Replace with your external API key
             },
         });
 
